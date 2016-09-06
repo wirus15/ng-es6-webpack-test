@@ -1,0 +1,11 @@
+node:
+  build: ./
+  ports:
+    - "3000:3000"
+    - "35729:35729"
+    - "9000:9000"
+  environment:
+    - TERM=xterm
+    - DOCKER=true
+  volumes:
+    - ./:/var/www/
